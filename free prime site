@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Upgrade </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5f7;
+      color: #252525;
+    }
+
+    header {
+      background: #d71920;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 25px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #00000010;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff0f0;
+      color: #c9151d;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #d71920;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #b9141b;
+    }
+
+    #message {
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .notice {
+      margin-top: 20px;
+      background: #fff8e5;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 12px;
+      color: #66521a;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JazzCash</h1>
+    <p>Account Upgrade </p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="badge">L0 → L1</div>
+
+      <h2>Upgrade Your Account</h2>
+
+      <p class="description">
+        Explore a sample account upgrade interface.
+        This realnstration  connect to JazzCash
+        or change your actual account level.
+      </p>
+
+      <form id="upgradeForm L1 ">
+        <label for="mobile"> mobile number</label>
+
+        <input
+          type="tel"
+          id="mobile"
+          placeholder="03XX XXXXXXX"
+          maxlength="11"
+          pattern="03[0-9]{9}"
+          required
+        >
+
+        <button type="submit">Continue </button>
+      </form>
+
+      <p id="message" role="status"></p>
+
+      <div class="notice">
+        real only. No OTP, MPIN, CNIC, or financial
+        information is requested. For a real upgrade,
+        use the official JazzCash app or support channels.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Independent realnstration — not an official JazzCash website.
+  </footer>
+
+  <script>
+    document.getElementById("upgradeForm")
+      .addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        document.getElementById("message").textContent =
+          "real successful! No account information was sent or changed.";
+        document.getElementById("message").style.color = "#16753b";
+      });
+  </script>
+
+</body>
+</html>
